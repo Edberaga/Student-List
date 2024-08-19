@@ -6,11 +6,13 @@ function addStudent() {
   let className = prompt("Enter student class: ");
 
   const newStudent = new Array(name, score, className);
+  console.log("New student: " + newStudent);
   studentList.push(newStudent);
+  console.log("Student list: " + studentList);
 }
 
 const viewStudents = () => {
-  const str = "List of students: \n";
+  let str = "List of students: \n";
   for(student of studentList) {
     str += `${student[0]} from class ${student[2]} : ${student[1]}\n`;
   }
