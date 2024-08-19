@@ -10,9 +10,9 @@ function addStudent() {
 }
 
 const viewStudents = () => {
-  const str = "List of students: \n"
+  const str = "List of students: \n";
   for(student of studentList) {
     str += `${student[0]} from class ${student[2]} : ${student[1]}\n`;
   }
   alert(str);
-} 
+}
